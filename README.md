@@ -63,5 +63,21 @@ cd LunarLander_Agent
 # Install dependencies
 pip install gym tensorflow numpy matplotlib pillow
 
+# Required Imports (Python)
+import time
+from collections import deque, namedtuple
+
+import gym
+import numpy as np
+import PIL.Image
+import tensorflow as tf
+import utils
+
+from pyvirtualdisplay import Display
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense, Input
+from tensorflow.keras.losses import MSE
+from tensorflow.keras.optimizers import Adam
+
 # Run training
 python lunar_lander.py
